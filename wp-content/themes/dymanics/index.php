@@ -72,13 +72,11 @@ get_header();
 				<!-- пока есть записи, извлекать по одной записи -->
 				<?php while (have_posts()) : the_post(); ?>
 				<div class="card" style="width: 18rem;">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/2093-photo-nh9cas_360x180_01d.jpg"
-						class="card-img-top">
+					<?= the_post_thumbnail('photo'); ?>
 					<div class="card-body">
-						<h5 class="card-title"><?php get_the_title() ?></h5>
-						<p class="card-text">Some quick example text to build on the card title and
-							make up the bulk of the card's content.</p>
-						<a href="<?php the_permalink(); ?>" class="btn btn-primary stretched-link">Перейти</a>
+						<h5 class="card-title"><?php the_title() ?></h5>
+						<p class="card-text"><?= get_the_excerpt(); ?></p>
+						<a href="<?php the_permalink(); ?>" class="stretched-link"></a>
 					</div>
 				</div>
 				<?php endwhile; ?>

@@ -75,9 +75,9 @@
 				<div id="main-menu" class="main-nav zn_mega_wrapper ">
 
 					<ul id="menu-main-menu" class="main-menu zn_mega_menu">
-						<li class="menu-item first"><a href="https://dynamics.com.ru/" class="first"><i
-									class="bi bi-house-fill"></i></a></li>
-						<li class="menu-item"><a href="https://dynamics.com.ru/firm">О фирме</a>
+						<li class="menu-item first"><a href="/" class="first"><i
+									class="bi bi-house-fill"> Главная фотоконкурса</i></a></li>
+						<!-- <li class="menu-item"><a href="https://dynamics.com.ru/firm">О фирме</a>
 							<ul class="sub-menu clearfix">
 								<li class="menu-item first"><a href="https://dynamics.com.ru/firm/klienty"
 										class="first">Клиенты</a></li>
@@ -288,7 +288,7 @@
 						</li>
 						<li class="menu-item"><a href="https://dynamics.com.ru/forum">Форум</a></li>
 						<li class="menu-item last"><a href="https://dynamics.com.ru/contacts" class="last">Контакты</a>
-						</li>
+						</li> -->
 					</ul>
 				</div>
 

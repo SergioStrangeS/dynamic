@@ -12,6 +12,9 @@
 /**
  * Twenty Nineteen only works in WordPress 4.7 or later.
  */
+
+add_image_size( 'photo', 360, 720, true );
+
 if ( version_compare( $GLOBALS['wp_version'], '4.7', '<' ) ) {
 	require get_template_directory() . '/inc/back-compat.php';
 	return;
