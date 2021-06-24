@@ -42,10 +42,10 @@
 	<!-- Url of your website -->
 	<meta property="og:url" content="/pages">
 
-	<link href="<?php echo get_template_directory_uri(); ?>/assets/css/css.css" rel="stylesheet">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/bootstrap.min.css" type="text/css"
+	<link href="<?php echo get_bloginfo('template_url'); ?>/assets/css/css.css" rel="stylesheet">
+	<link rel="stylesheet" href="<?php echo get_bloginfo('template_url'); ?>/assets/css/bootstrap.min.css" type="text/css"
 		media="all">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/template.css">
+	<link rel="stylesheet" href="<?php echo get_bloginfo('template_url'); ?>/assets/css/template.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 	<?php wp_head(); ?>
 </head>
@@ -294,7 +294,7 @@
 
 				<a href="https://dynamics.com.ru/" id="ctabutton" class="ctabutton" title="НПП «Динамика»">
 
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logow2.png">
+					<img src="<?php echo get_bloginfo('template_url'); ?>/assets/img/logow2.png">
 				</a>
 
 			</div>

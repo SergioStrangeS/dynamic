@@ -31,6 +31,10 @@ a {
     /*text-decoration: underline;*/
 }
 
+.jcenter {
+    justify-content: space-around;
+}
+
 .cartlink {
 	color: #fff;
     -webkit-transition: color .25s ease-in-out;
@@ -4309,7 +4313,7 @@ section.hg_section.firstNews{
     margin-bottom: -22px;
 }
 section.hg_section.blockArticle{
-    padding-bottom: 0px;
+    padding-bottom: 25px;
 }
 
 

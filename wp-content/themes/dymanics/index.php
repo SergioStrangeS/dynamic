@@ -65,7 +65,7 @@ get_header();
 </div>
 <section class="hg_section pbottom-50 blockArticle">
 	<div class="container">
-		<div class="row">
+		<div class="row jcenter">
 
 				<!-- если есть записи -->
 				<?php if (have_posts()) : ?>
@@ -95,7 +95,7 @@ get_header();
 								</li>
 							</ul> -->
 
-					<?php the_posts_pagination(); ?>
+							<?php wp_pagenavi(); ?>
 				</div>
 
 		</div>

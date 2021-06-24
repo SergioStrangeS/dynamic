@@ -54,45 +54,16 @@
 
 	<span class="catItemDateCreated kl-blog-item-date updated"></span>
 
-<section class="hg_section pbottom-50 blockArticle">
-	<div class="container">
-		<div class="row">
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<?php if ( ! twentynineteen_can_show_post_thumbnail() ) : ?>
-				<header class="entry-header">
-					<?php get_template_part( 'template-parts/header/entry', 'header' ); ?>
-				</header>
-				<?php endif; ?>
-
-				<?= get_the_post_thumbnail(); ?>
-
-				<div class="entry-content">
-					<?php
-					the_content(
-						sprintf(
-							wp_kses(
-								/* translators: %s: Post title. Only visible to screen readers. */
-								__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'twentynineteen' ),
-								array(
-									'span' => array(
-										'class' => array(),
-									),
-								)
-							),
-							get_the_title()
-						)
-					);
-
-					wp_link_pages(
-						array(
-							'before' => '<div class="page-links">' . __( 'Pages:', 'twentynineteen' ),
-							'after'  => '</div>',
-						)
-					);
-					?>
-				</div><!-- .entry-content -->
-
-			</article><!-- #post-<?php the_ID(); ?> -->
+	<section class="hg_section pbottom-50 blockArticle">
+		<div class="container">
+			<div class="row">
+				<div class="card">
+					<?= the_post_thumbnail('large ', array('class' => "rounded card-img-top")); ?>
+					<div class="card-body">
+						<p class="card-text"><?= the_content(); ?></p>
+						<?php if(function_exists('the_ratings')) { the_ratings(); } ?>
+					</div>
+				</div>
+			</div>
 		</div>
-	</div>
-</section>
+	</section>
